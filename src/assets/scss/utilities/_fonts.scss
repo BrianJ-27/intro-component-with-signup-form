@@ -1,19 +1,21 @@
 // **************************************
 // FONT MAPS
 // **************************************
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 $font-love: (
   f-size: (
     normal: 1rem,
   ),
   f-weight: (
-    light: 200,
     normal: 400,
-    bold: 700,
+    medium: 500,
+    bold: 600,
+    very-bold: 700,
   ),
   font: (
-    main: "Arial" sans-serif,
+    main: "Poppins" sans-serif,
   ),
   l-weight: (
     sm-space: 1.3,

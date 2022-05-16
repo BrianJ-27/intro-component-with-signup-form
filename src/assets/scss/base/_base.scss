@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: px-to-rems(16px);
+  font-size: var(--fp-f-size-normal);
 }
 
 html,
