@@ -22,8 +22,16 @@ body {
 **OPTIONAL**
 To keep component based projects from touching the sides of the viewport only*/
 body {
-  width: calc(100% - 1.5rem);
+  width: calc(100% - 2rem);
   margin-inline: auto;
+  background-image: url(../../images/bg-intro-mobile.png);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--clr-primary-error);
+  @include mq("md") {
+    background-image: url(../../images/bg-intro-desktop.png);
+  }
 }
 
 p {

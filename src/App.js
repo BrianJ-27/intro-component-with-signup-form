@@ -3,12 +3,12 @@ import Button from "./components/reusable/button/button";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="grid__container">
       <main>
         <div className="intro__container">
-          <h1>Learn to code by watching others</h1>
+          <h1 className="title__primary">Learn to code by watching others</h1>
 
-          <p>
+          <p className="content__intro">
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great, but understanding how developers think
             is invaluable.
@@ -35,9 +35,9 @@ const App = () => {
               <Button>Claim your free trial</Button>
             </fieldset>
 
-            <p>
+            <p className="content__body">
               By clicking the button, you are agreeing to our
-              <strong>Terms and Services</strong>{" "}
+              <strong className="content__terms">Terms and Services</strong>
             </p>
           </form>
         </div>

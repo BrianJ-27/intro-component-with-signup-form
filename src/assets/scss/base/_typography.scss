@@ -3,41 +3,46 @@
 // **************************************
 @use "../utilities" as *;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+:is(h1, h2, h3, h4, h5, h6) {
   font-family: var(--fp-font-main);
+}
+
+:is(.title__primary, .content) {
+  text-align: center;
 }
 
 //h1 styles
 .title__primary {
   @extend %text-modules;
   @include text-prop(
-    $size: clamp(1rem, 1.908rem + (0.0454 * 100vw), 3.5rem),
-    $f-weight: 400,
-
+    $size: clamp(1.1rem, 6vw, 3.5rem),
+    $f-weight: var(--fp-f-weight-very-bold),
+    $color: var(--clr-light-normal)
   );
-}
-
-//h2 styles
-.title__secondary {
-  @include text-prop(
-    $size: clamp(1.5rem, 8vw, 3rem),
-    $f-weight: 500,
-  
-  );
-  @extend %text-modules;
+  padding: 1rem 1.5rem 1.3rem;
 }
 
 /*----CONTENT STYLES----*/
 
 .content {
   @include text-prop(
-    $size: clamp(1.25rem, 6vw, 2.5rem),
-    $f-weight: 800,
- 
+    $size: clamp(0.8rem, 3vw, 1.3rem),
+    $f-weight: var(--fp-f-weight-normal),
+    $color: var(--clr-light-normal)
   );
+  &__body {
+    @include text-prop(
+      $size: clamp(0.5rem, 3vw, 1.3rem),
+      $f-weight: var(--fp-f-weight-medium),
+      $color: var(--clr-text-normal)
+    );
+    padding: 1rem 2rem;
+  }
+  &__intro {
+    @extend .content;
+    padding: 0rem 1rem 3rem;
+  }
+  &__terms {
+    color: var(--clr-primary-error);
+  }
 }
