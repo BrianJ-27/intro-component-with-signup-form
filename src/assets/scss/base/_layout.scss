@@ -6,7 +6,7 @@
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
-  @include flex_me($just: space-between, $vertAlign: center);
+  @include flex_me($dir: column, $vertAlign: center);
 }
 
 /*------GRID LAYOUT STYLES-----------*/

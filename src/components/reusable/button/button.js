@@ -30,6 +30,7 @@ const StyledButton = styled.button`
       background: var(--clr-primary-base);
       text-transform: uppercase;
       font-weight: var(--fp-f-weight-bold);
+      padding: 1.2rem 2.5rem;
 
       border: 2px solid var(--clr-primary-base);
       &:hover {
