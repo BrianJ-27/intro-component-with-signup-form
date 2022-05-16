@@ -1,15 +1,18 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
-const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid palevioletred;
-  color: palevioletred;
-  margin: 0 1rem;
-  padding: 0.25rem 1rem;
-  letter-spacing: 1.1px;
-  font-weight: 500;
+const StyledButton = styled.button`
+  background: var(--clr-accent-text);
+  box-shadow: 0px 8px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: var(--soft-curve);
+  border: 2px solid var(--clr-accent-text);
+  color: var(--clr-light-normal);
+  margin-bottom: 1rem;
+  padding: 1.2rem 3.5rem;
+  letter-spacing: 1.6px;
+  line-height: 1.4;
+  font-weight: var(--fp-f-weight-normal);
+  font-size: 11px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   &:hover {
@@ -22,21 +25,22 @@ const Button = styled.button`
   }
 
   ${(props) =>
-    props.primary &&
+    props.form_btn &&
     css`
-      background: blue;
-      color: white;
-      border: 2px solid blue;
+      background: var(--clr-primary-base);
+      text-transform: uppercase;
+      font-weight: var(--fp-f-weight-bold);
+
+      border: 2px solid var(--clr-primary-base);
       &:hover {
         background-color: transparent;
-        color: blue;
-        border: 2px solid blue;
+        color: var(--clr-primary-base);
       }
     `};
 `;
 
-const CustomButton = ({ children, handleButton }) => {
-  return <Button onClick={() => handleButton()}> {children} </Button>;
+const CustomButton = ({ handleButton, ...props }) => {
+  return <StyledButton onClick={() => handleButton()} {...props} />;
 };
 
 export default CustomButton;

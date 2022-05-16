@@ -14,7 +14,10 @@ const App = () => {
             is invaluable.
           </p>
 
-          <Button>Try it free 7 days then $20/mo. thereafter</Button>
+          <Button>
+            <span className="content__btn">Try it free 7 days</span> then
+            $20/mo. thereafter
+          </Button>
         </div>
 
         <div className="form__container">
@@ -32,7 +35,7 @@ const App = () => {
               <label htmlFor="">Password</label>
               <input type="password" />
 
-              <Button>Claim your free trial</Button>
+              <Button form_btn>Claim your free trial</Button>
             </fieldset>
 
             <p className="content__body">

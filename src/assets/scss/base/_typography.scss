@@ -30,6 +30,12 @@
     $f-weight: var(--fp-f-weight-normal),
     $color: var(--clr-light-normal)
   );
+  &__btn {
+    @include text-prop(
+      $size: px-to-rems(10px),
+      $f-weight: var(--fp-f-weight-very-bold)
+    );
+  }
   &__body {
     @include text-prop(
       $size: clamp(0.5rem, 3vw, 1.3rem),
