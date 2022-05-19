@@ -5,7 +5,7 @@ import Footer from "./components/layout/footer/footer";
 const App = () => {
   return (
     <div className="grid__container">
-      <main>
+      <main className="main__grid--container">
         <div className="intro__container">
           <IntroHeader />
         </div>
@@ -14,7 +14,7 @@ const App = () => {
           <Form />
         </div>
       </main>
-      <Footer />
+      <Footer className="footer__container" />
     </div>
   );
 };

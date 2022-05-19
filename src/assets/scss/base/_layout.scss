@@ -6,7 +6,7 @@
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
-  @include flex_me($dir: column, $vertAlign: center);
+  @include flex_me($dir: column);
 }
 
 /*------GRID LAYOUT STYLES-----------*/
@@ -17,24 +17,25 @@
 }
 
 .main__grid--container {
-  position: relative;
   display: grid;
   grid-template-columns: minmax(300px, 350px);
   grid-template-areas:
-    "card_image"
-    "card_content";
+    "intro__container"
+    "form__container";
   @include mq("md") {
-    max-width: 62rem;
-    grid-template-columns: 2fr 3fr;
+    margin-top: px-to-rems(100px);
+    max-width: 65rem;
+    gap: 3rem;
+    grid-template-columns: 4fr 3fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "card_image card_content";
+    grid-template-areas: "intro__container form__container";
   }
 }
 
-.card_image {
-  grid-area: card_image;
+.intro__container {
+  grid-area: intro__container;
 }
 
-.card_content {
-  grid-area: card_content;
+.form__container {
+  grid-area: form__container;
 }

@@ -13,11 +13,12 @@ const StyledButton = styled.button`
   line-height: 1.4;
   font-weight: var(--fp-f-weight-normal);
   font-size: 11px;
+  width: 100%;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   &:hover {
-    background: palevioletred;
-    color: white;
+    background: transparent;
+    color: var(--clr-accent-text);
   }
   &:focus,
   &:focus-visible {
@@ -31,7 +32,7 @@ const StyledButton = styled.button`
       text-transform: uppercase;
       font-weight: var(--fp-f-weight-bold);
       padding: 1.2rem 2.5rem;
-
+      box-shadow: 0px 5px 1px 0px rgba(32, 126, 85, 0.8);
       border: 2px solid var(--clr-primary-base);
       &:hover {
         background-color: transparent;
@@ -40,8 +41,8 @@ const StyledButton = styled.button`
     `};
 `;
 
-const CustomButton = ({ handleButton, ...props }) => {
-  return <StyledButton onClick={() => handleButton()} {...props} />;
+const CustomButton = ({ ...props }) => {
+  return <StyledButton {...props} />;
 };
 
 export default CustomButton;

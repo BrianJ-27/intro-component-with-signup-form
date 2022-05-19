@@ -1,8 +1,14 @@
 import React from "react";
-import Button from "../../reusable/button/button";
 import styled from "styled-components";
 
-const Header = styled.header``;
+const Header = styled.header`
+  @media only screen and (min-width: 768px) {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+`;
 
 const CustomHeader = () => {
   return (
@@ -14,11 +20,6 @@ const CustomHeader = () => {
         scripted tutorials is great, but understanding how developers think is
         invaluable.
       </p>
-
-      <Button>
-        <span className="content__btn">Try it free 7 days</span> then $20/mo.
-        thereafter
-      </Button>
     </Header>
   );
 };

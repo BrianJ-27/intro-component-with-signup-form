@@ -9,13 +9,16 @@
 
 :is(.title__primary, .content) {
   text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
 }
 
 //h1 styles
 .title__primary {
   @extend %text-modules;
   @include text-prop(
-    $size: clamp(1.1rem, 6vw, 3.5rem),
+    $size: clamp(1.1rem, 6vw, 3rem),
     $f-weight: var(--fp-f-weight-very-bold),
     $color: var(--clr-light-normal)
   );
@@ -38,15 +41,25 @@
   }
   &__body {
     @include text-prop(
-      $size: clamp(0.5rem, 3vw, 1.3rem),
+      $size: clamp(0.5rem, 3vw, 0.7rem),
       $f-weight: var(--fp-f-weight-medium),
       $color: var(--clr-text-normal)
     );
-    padding: 1rem 2rem;
+    padding: 1rem;
+    text-align: center;
+    @include mq("md") {
+      font-size: px-to-rems(10px);
+
+      padding: 0 1rem;
+    }
   }
   &__intro {
     @extend .content;
     padding: 0rem 1rem 3rem;
+    @include mq("md") {
+      padding: 0rem 1.3rem;
+      font-size: px-to-rems(15px);
+    }
   }
   &__terms {
     color: var(--clr-primary-error);
