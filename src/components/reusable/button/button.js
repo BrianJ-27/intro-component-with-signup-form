@@ -20,9 +20,10 @@ const StyledButton = styled.button`
     background: transparent;
     color: var(--clr-accent-text);
   }
-  &:focus,
+
   &:focus-visible {
-    outline: 3px dotted black;
+    outline: 2px var(--clr-accent-text);
+    padding: 1px;
   }
 
   ${(props) =>

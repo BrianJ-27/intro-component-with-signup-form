@@ -11,6 +11,10 @@ const StyledInput = styled.input`
   ::placeholder {
     padding-left: 20px;
   }
+  &:focus-visible {
+    outline: 2px var(--clr-accent-text);
+    padding: 1px;
+  }
 `;
 
 const InputField = ({ ...props }) => {
