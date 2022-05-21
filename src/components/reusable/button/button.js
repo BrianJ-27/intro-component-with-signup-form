@@ -22,8 +22,7 @@ const StyledButton = styled.button`
   }
 
   &:focus-visible {
-    outline: 2px var(--clr-accent-text);
-    padding: 1px;
+    outline: 2px dotted var(--clr-accent-text);
   }
 
   ${(props) =>

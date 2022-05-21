@@ -12,6 +12,9 @@ const Footer = styled.footer`
     &:hover {
       color: var(--clr-primary-base);
     }
+    &:focus-visible {
+      outline: 2px dotted var(--clr-accent-text);
+    }
   }
 `;
 

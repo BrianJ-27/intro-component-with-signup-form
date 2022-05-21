@@ -12,8 +12,7 @@ const StyledInput = styled.input`
     padding-left: 20px;
   }
   &:focus-visible {
-    outline: 2px var(--clr-accent-text);
-    padding: 1px;
+    outline: 2px dotted var(--clr-accent-text);
   }
 `;
 
