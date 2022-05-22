@@ -82,7 +82,7 @@ const Form = () => {
               onChange={(e) => handleUpdate("lastName", e)}
               placeholder="Last Name"
             />
-            <label htmlFor="Last_name">Last Name</label>
+            <label htmlFor="last_name">Last Name</label>
 
             <FormField
               type="email"
@@ -102,7 +102,7 @@ const Form = () => {
               onChange={(e) => handleUpdate("password", e)}
               placeholder="Password"
             />
-            <label htmlFor="password">Password</label>
+            <label htmlFor="form_password">Password</label>
 
             <Button form_btn>Claim your free trial</Button>
           </div>

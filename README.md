@@ -20,24 +20,23 @@ This is a solution to the [Intro Component With Signup Form challenge on Fronten
 
 ## Overview
 
-Main overview
+Layout the intro component along with the form component for all screen sizes
 
 ### The challenge
 
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- See the social media share links when they click the share icon
-- Making sure the component is as accessible as possible
+- Making sure the form component buttons and links are accessible
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./intro-component-with-signup-form.png)
 
 ### Links
 
 - Solution URL: [FEM Solution Link](https://www.frontendmentor.io/solutions/article-preview-component-react-based-BJocjy2U5)
-- Live Site URL: [Live Deployed Site](https://article-preview-component-bj.netlify.app/)
+- Live Site URL: [Brian's Deployed](https://intro-with-form-bj.netlify.app/)
 
 ## My process
 
