@@ -8,11 +8,12 @@ const StyledInput = styled.input`
   padding: 10px 10px 10px 5px;
   display: block;
   width: 100%;
-  ::placeholder {
-    padding-left: 20px;
+  padding-left: 30px;
+  &::placeholder {
+    font-weight: var(--fp-f-weight-very-bold);
   }
   &:focus-visible {
-    outline: 2px dotted var(--clr-accent-text);
+    outline: 1px solid var(--clr-accent-text);
   }
 `;
 
