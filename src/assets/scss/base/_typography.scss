@@ -34,6 +34,7 @@
     $f-weight: var(--fp-f-weight-normal),
     $color: var(--clr-light-normal)
   );
+
   &__btn {
     @include text-prop(
       $size: px-to-rems(10px),
