@@ -24,10 +24,9 @@
     "form__container";
   @include mq("md") {
     margin-top: px-to-rems(100px);
-    max-width: 65rem;
+    max-width: 70rem;
     gap: 3rem;
-    grid-template-columns: 4fr 3fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-areas: "intro__container form__container";
   }
 }

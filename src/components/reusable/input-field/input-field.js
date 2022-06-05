@@ -5,7 +5,7 @@ const StyledInput = styled.input`
   margin-bottom: 1.3rem;
   border: 1px solid var(--clr-text-normal);
   border-radius: var(--soft-curve);
-  padding: 10px 10px 10px 5px;
+  padding: 15px 10px 15px 5px;
   display: block;
   width: 100%;
   padding-left: 30px;

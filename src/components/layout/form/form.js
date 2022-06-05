@@ -8,10 +8,14 @@ const StyledForm = styled.form`
   background-color: var(--clr-light-normal);
   border-radius: var(--soft-curve);
   padding: 1rem;
+  box-shadow: 0px 8px 1px 0px rgba(0, 0, 0, 0.15);
+  @media only screen and (min-width: 768px) {
+    padding: 2rem;
+  }
 `;
 
 const Form = () => {
-  // Set initial Form State values to empty string
+  // Set initial Form State values to empty strings
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -19,7 +23,7 @@ const Form = () => {
     password: "",
   });
 
-  // Handles the onchange event when users type in values
+  // Handles the onchange event when users type in input values
   const handleUpdate = (field, { target }) => {
     setFormData({
       ...formData,
