@@ -1,10 +1,10 @@
-# Frontend Mentor - Article preview component solution
+# Frontend Mentor - Intro Component With Signup Form Solution
 
 This is a solution to the [Intro Component With Signup Form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Frontend Mentor - Article preview component solution](#frontend-mentor---article-preview-component-solution)
+- [Frontend Mentor - Intro Component With Signup Form Solution](#frontend-mentor---intro-component-with-signup-form-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
