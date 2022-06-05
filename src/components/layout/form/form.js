@@ -69,6 +69,7 @@ const Form = () => {
                 label={inputValues.label}
                 aria-label={inputValues.aria_label}
                 id={inputValues.id}
+                style={inputValues.style}
               />
             ))}
             <Button form_btn>Claim your free trial</Button>

@@ -33,10 +33,17 @@ const StyledLabel = styled.label`
   }
 `;
 
-const InputField = ({ label, id, ...otherProps }) => {
+const InputField = ({ label, id, style, ...otherProps }) => {
   return (
     <div className="field__group">
-      <StyledInput id={id} required {...otherProps} />
+      <StyledInput
+        id={id}
+        required
+        {...otherProps}
+        style={{
+          marginTop: `${style}`,
+        }}
+      />
       {label ? <StyledLabel htmlFor={id}>{label}</StyledLabel> : null}
     </div>
   );

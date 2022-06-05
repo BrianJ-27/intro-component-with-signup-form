@@ -8,7 +8,7 @@ const inputValues = [
     value: "firstName",
     aria_label: "First Name Field",
     id: "first_name",
-    style: "marginTop: 1rem",
+    style: "1rem",
   },
   {
     formId: 2,
