@@ -2,10 +2,10 @@
 // STATE STYLES
 // **************************************
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
+.show__error-input {
+  position: relative;
+  border: 2px solid var(--clr-primary-error) !important;
+  &::placeholder {
+    opacity: 0;
+  }
 }

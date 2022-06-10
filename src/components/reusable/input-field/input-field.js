@@ -33,18 +33,49 @@ const StyledLabel = styled.label`
   }
 `;
 
-const InputField = ({ label, id, style, ...otherProps }) => {
+const ErrorMessage = styled.div`
+  padding: 5px;
+  position: relative;
+  font-size: 12px;
+  font-style: italic;
+  text-align: right;
+  color: var(--clr-primary-error);
+`;
+
+const ErrorIcon = styled.svg`
+  position: absolute;
+  top: -60px;
+  right: 10px;
+  @media only screen and (min-width: 768px) {
+  }
+`;
+
+const InputField = ({ label, id, errors, ...otherProps }) => {
   return (
     <div className="field__group">
       <StyledInput
         id={id}
-        required
         {...otherProps}
-        style={{
-          marginTop: `${style}`,
-        }}
+        className={errors ? "show__error-input" : ""}
       />
       {label ? <StyledLabel htmlFor={id}>{label}</StyledLabel> : null}
+      {errors && (
+        <ErrorMessage className="show__error-msg">
+          <p style={{ transform: "translateY(-20px)" }}>{errors}</p>
+          <ErrorIcon
+            className="show__error-icon"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="none" fillRule="evenodd">
+              <circle fill="#FF7979" cx="12" cy="12" r="12" />
+              <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+              <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+            </g>
+          </ErrorIcon>
+        </ErrorMessage>
+      )}
     </div>
   );
 };
